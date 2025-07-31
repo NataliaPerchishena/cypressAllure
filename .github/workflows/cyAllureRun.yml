@@ -3,13 +3,14 @@ name: Cypress Tests using Cypress Docker Image with allure-report
 on:
     push:
         branches: [master]
+    workflow_dispatch:
 
 jobs:
     Run_test:
-        runs-on: ubuntu-20.04 # Choosing OS
+        runs-on: ubuntu-latest
         strategy:
             matrix:
-                node-version: [14.17.0]
+                node-version: [18.x]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
             - uses: actions/checkout@v2
