@@ -27,7 +27,7 @@ jobs:
               if: always()
               run: npm run allure:generate
             - name: Upload artifact allure-report
-              uses: actions/upload-artifact@v1
+              uses: actions/upload-artifact@v4
               if: always()
               with:
                   name: allure-report
