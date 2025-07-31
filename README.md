@@ -12,7 +12,7 @@
 
 ---
 
-**Directory Structure**
+**Directory Structure:**
 
 <img width="388" alt="Project structure" src="https://i.imgur.com/ShDQGy8.png">
 
